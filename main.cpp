@@ -24,7 +24,7 @@ extern "C" void main() {
 
   for (int w = 1; w <= width; w++) {
     for (int h = 1; h <= height; h++) {
-      LCD_SetPixel(w, h, color(1, 1, 1));
+      LCD_SetPixel(w, h, color(255, 255, 255));
     };
   };
 
