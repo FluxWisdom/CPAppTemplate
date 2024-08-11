@@ -1,5 +1,4 @@
 #include <appdef.hpp>
-#include <math.h>
 #include <sdk/calc/calc.hpp>
 #include <sdk/os/debug.hpp>
 #include <sdk/os/lcd.hpp>
@@ -33,7 +32,9 @@ float sdSphere(vec3 p, float s) { return length(p) - s; };
 extern int width;
 extern int height;
 
-uint16_t RayMarch(float x, float y) { return color(255, 255, 255); }
+uint16_t RayMarch(float x, float y) {
+  return color(255 / (x + y), 255 / (x + y), 255 / (x + y));
+}
 
 extern "C" void main() {
   calcInit(); // backup screen and init some variables
