@@ -1,5 +1,5 @@
 #include <appdef.hpp>
-#include <cmath>
+#include <math.h>
 #include <sdk/calc/calc.hpp>
 #include <sdk/os/debug.hpp>
 #include <sdk/os/lcd.hpp>
