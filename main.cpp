@@ -3,10 +3,10 @@
 #include <sdk/os/debug.hpp>
 #include <sdk/os/lcd.hpp>
 
-APP_NAME("Test")
+APP_NAME("Render")
 APP_DESCRIPTION("A test app")
 APP_AUTHOR("Flux")
-APP_VERSION("1.0.2")
+APP_VERSION("1.0.0")
 
 // Example for Debug_Printf(x,y,invert_color,0,format_string); //(small text)
 // Example for Debug_PrintString(string, invert_color); //(big text)
@@ -23,11 +23,11 @@ public:
 
 // typedef unsigned vec3;
 
-float sqrt(float num) { return num; };
+// float sqrt(float num) { return num; };
 
-float length(vec3 v) { return sqrt((v.x * v.x) + (v.y * v.y) + (v.z * v.z)); };
+// float length(vec3 v) { return sqrt((v.x * v.x) + (v.y * v.y) + (v.z * v.z)); };
 
-float sdSphere(vec3 p, float s) { return length(p) - s; };
+// float sdSphere(vec3 p, float s) { return length(p) - s; };
 
 extern int width;
 extern int height;
